@@ -1,0 +1,9 @@
+# JETSON RC CAR SIMULTATION AND MODEL IMPROVEMENT
+The intent of this project is to use a unity simulated enviroment to train a model that can be used on a RC car IRL
+
+# Goals of this project
+1. Collect training data from simulator and train a resnet imitation learning model. 
+    This step was completed by driving the car around the simulator and while driving the car opencv was used to collect the mouse cursor location and assign it to that image frame. A csv file was made and used to train the Resnet Model.
+2. Improve real life performance. When the above step was completed using the real life car often pertubations in the enviorment were introduced that were not demonstrated in the training set. My solution to this problem was to segment the lane lines and feed those segmented images into the imitation network. This was done by using opencv to create a segmented dataset on the simulator. Lighting changes were done in the simulator to demonstrate change of lighting as well. After the dataset was created it was trained on a Unet as well as a Unet with convolutional LSTM to capture temporal data. I have proved that this works and can be run on the simulator.
+3. Next step is to decrease the size of the network and test it on the jetson nano. This was completed with the help of TensorRT and I was able to feed a video into the Jetson nano and show that the now lightweight network runs on the jetson nano platform
+4. Create a real life dataset and run on real life car. This part of the project is on going. I am in the process of making the real life dataset then I will continue to train the pretrained model on these images and then run it on the car. 

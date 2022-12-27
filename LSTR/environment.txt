@@ -1,0 +1,29 @@
+# This file may be used to create an environment using:
+# $ conda create --name <env> --file <this file>
+# platform: linux-64
+_libgcc_mutex=0.1
+blas=1.0
+ca-certificates=2020.1.1
+certifi=2020.4.5.1
+cython=0.29.17
+intel-openmp=2020.1
+ld_impl_linux-64=2.33.1
+libedit=3.1.20181209
+libffi=3.3
+libgcc-ng=9.1.0
+libgfortran-ng=7.3.0
+libstdcxx-ng=9.1.0
+mkl=2020.1
+mkl-service=2.3.0
+ncurses=6.2
+openssl=1.1.1g
+pip=20.0.2
+python=3.6.10
+readline=8.0
+setuptools=47.1.1
+six=1.14.0
+sqlite=3.31.1
+tk=8.6.8
+wheel=0.34.2
+xz=5.2.5
+zlib=1.2.11
