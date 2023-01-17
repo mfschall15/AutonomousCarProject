@@ -2,7 +2,9 @@
 """
 Created on Wed May 25 15:52:21 2022
 
-@author: muskr
+Converts simulator raw images to lane lines using opencv
+
+@author: Marcus
 """
 import cv2 # Import the OpenCV library to enable computer vision
 import numpy as np # Import the NumPy scientific computing library
